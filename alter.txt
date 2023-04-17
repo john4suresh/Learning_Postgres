@@ -1,0 +1,16 @@
+----- COLUMN -----
+Add a new column to table
+-- ALTER TABLE sales_item ADD day_of_week VARCHAR(8);
+
+Add a modify column in the table
+-- ALTER TABLE sales_item ALTER COLUMN day_of_week SET NOT NULL;
+
+Rename the column in the table
+-- ALTER TABLE sales_item RENAME COLUMN day_of_week TO weekday;
+
+Delete the column in the table
+-- ALTER TABLE sales_item DROP COLUMN weekday;
+
+
+----- TABLE -----
+ALTER TABLE transaction_type RENAME TO transaction;

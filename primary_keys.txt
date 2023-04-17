@@ -1,0 +1,21 @@
+Primary Key
+
+A primary key is a column or a group of columns used to identify a row uniquely in a table.
+Technically, a primary key constraint is the combination of a not-null constraint and a UNIQUE constraint.
+A table can have one and only primary key.
+It is a good practice to add a primary key to every table.
+
+Foreign Key
+
+A foreign key is a column or a group of columns in a table that reference the primary key of another table.
+The table that contains the foreign key is called the referencing table or child table. 
+And the table referenced by the foreign key is called the referenced table or parent table.
+A table can have multiple foreign keys depending on its relationships with other tables.
+
+Example:
+CREATE TABLE product(
+type_id INTEGER REFERENCES product_type(id),
+name VARCHAR(30) NOT NULL,
+supplier VARCHAR(30) NOT NULL,
+description TEXT NOT NULL,
+id SERIAL PRIMARY KEY);

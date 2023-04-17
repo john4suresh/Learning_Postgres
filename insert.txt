@@ -1,0 +1,17 @@
+Insert data into tables
+
+insert into table_name values(1,'Fluffy', '2020-11-20');
+
+insert into table_name(column_names) values(column_values);
+
+Example:
+insert into owners values(5, 'John', 'Suresh', '898989889', 'test@test.com');
+insert into owners(id, first_name, last_name, phone) values(6, 'Test', 'Testing', '4564564565');
+
+More on Inserts (Not only one row)
+
+insert into pets(id, pet_type_id, owner_id, pet_name) 
+values
+	(10, 1, 10, 'Chirp'),
+	(11, 2, 11, 'Iau'),
+	(12, 3, 11, 'Rrr');

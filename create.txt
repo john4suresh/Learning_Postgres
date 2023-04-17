@@ -1,0 +1,20 @@
+Create a Database
+Database us “structure” of a building
+
+create database database_name;
+Example:
+create database pet_hotel;
+
+Create a Table
+Table is a “room” in a house
+
+create table table_name(
+column_1 type [...],
+column_2 type ...
+);
+
+Example:
+create table pets(
+id integer not null,
+name varchar not null,
+birth_date date);
